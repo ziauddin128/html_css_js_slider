@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.main
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center 
+{
+    height: 85%;
+    width: 70%;
+/*     background-color: skyblue; */
+    position: relative;
+}
+.img_box
+{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.img_box img 
+{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text
+{
+    position: absolute;
+    bottom: 5%;
+    left: -20%;
+    height: 220px;
+   /*   background-color: red; */
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+.text_box{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+.text_box h1 
+{
+    font-size: 40px;
+    font-weight: 700;
+}
+.text_box p 
+{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+    width: 250px;
+}
+
+.logo 
+{
+    position: absolute;
+    left: 10%;
+    top: 7%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.menu 
+{
+    position: absolute;
+    right: 11%;
+    top: 7%;
+    font-size: 30px;
+    font-weight: 600;
+    color: black !important;
+    text-decoration: none;
+}
+.social
+{
+    position: absolute;
+    left: 1%;
+    top: 30%;
+}
+.social a 
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: black !important;
+    text-decoration: none;
+    display: block;
+    margin: 18px 0;
+}
+.about_us 
+{
+    position: absolute;
+    right: 6%;
+    bottom: 13%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about_us i 
+{
+    margin-left: 10px;
+}
+
+@media(max-width: 599px)
+{
+    .logo,.menu
+    {
+        top: 3%;
+    }
+    .center
+    {
+        height: 80%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .text 
+    {
+        left: 2%;
+    }
+    .social 
+    {
+        top: 92%;
+    }
+    .social a 
+    {
+        display: inline-block;
+        margin: 2px 4px;
+    }
+    .about_us
+    {
+        bottom: 4%;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 1200px)
+{
+    .logo{
+        left: 5%;
+    }
+   .menu 
+   {
+     right: 6%;
+   }
+   .social
+   {
+    left: 3%;
+   }
+   .about_us {
+        right: 0%;
+        transform: rotate(90deg);
+    }
+}
+
+@media(min-width: 1201px) and (max-width: 1500px)
+{
+   .about_us {
+        right: 3%;
+    }
+}
